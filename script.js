@@ -77,7 +77,7 @@ if (contactForm) {
       `Message: ${formData.get("message")}`
     );
 
-    const email = "sdrworldpublicschool@gmail.com";
+    const email = "habibur630@gmail@gmail.com";
     const mailto = `mailto:${email}?subject=${subject}&body=${body}`;
 
     const status = document.getElementById("formStatus");
