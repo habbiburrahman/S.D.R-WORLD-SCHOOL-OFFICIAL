@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!form) return;
 
     // Gmail Configuration
-    const gmail = "sdrworldpublic@gmail.com";
+    const gmail = "habibur630@gmail@gmail.com";
 
     form.action = "https://formsubmit.co/" + gmail;
     form.method = "POST";
