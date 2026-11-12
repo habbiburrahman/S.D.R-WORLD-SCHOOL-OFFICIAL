@@ -1,0 +1,155 @@
+
+/* Fixed Apply Admission Button */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: #eeeeee;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.form-container {
+    max-width: 950px;
+    margin: auto;
+    background: #fffde2;
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #00633d;
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.header h2 {
+    color: #d92323;
+    margin: 5px;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.section-title {
+    color: #8b2525;
+    border-bottom: 2px solid #8b2525;
+    padding-bottom: 8px;
+    margin-top: 25px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.field.full {
+    grid-column: 1 / -1;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #a88a7b;
+    background: white;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 65px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+.upload-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.upload-box .field {
+    background: #fff;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.declaration {
+    margin-top: 25px;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    background: #00633d;
+    color: white;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #004d30;
+}
+
+.note {
+    font-size: 12px;
+    color: #555;
+    margin-top: 12px;
+}
+
+@media(max-width:600px) {
+    body {
+        padding: 8px;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .upload-box {
+        grid-template-columns: 1fr;
+    }
+}
+
